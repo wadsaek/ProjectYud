@@ -1,0 +1,104 @@
+﻿body {
+    background-color: #321B58;
+    margin: 0 0;
+    padding: 0 0;
+    font-family: inria_sansregular;
+}
+a{
+    text-decoration:none;
+}
+.pfp-image{
+    border-radius:50%;
+}
+.allrights{
+    
+   align-self:center;
+}
+footer {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: /*#A44A3F;*/ #1D1C6B;
+    text-align: center;
+    max-height: 15%;
+    box-shadow: 0 -1px 2px;
+}
+.credits{
+    /*margin-left:11%;*/
+}
+input{
+    font-family:inherit;
+}
+.foot p {
+    color: #D9D9D9;
+}
+.foot {
+    padding-left:11%;
+    padding-right:11%;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between
+}
+.links {
+    font-family:'inria_sansbold';
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content:space-evenly;
+    font-size:25px;
+    color: #A7ADC6;
+    /*margin-right:11%;*/
+}
+.footanchor {
+    /*color: #A7ADC6;*/
+    color: #D9D9D9;
+    font-size: 25px;
+    margin-left: 11px;
+}
+header {
+    background-color: /*#B59800;*/ #0074B5;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    width: 100%;
+    height: 120px;
+    max-height: 18%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: #000000 0px 1px 4px;
+}
+#LogUp{
+    display:flex;
+    flex-direction:column;
+    padding:0;
+
+}
+.headercontainer {
+    font-family: 'inria_sansbold';
+    font-size: 30px;
+    align-items: center;
+    margin-left: 11%;
+    margin-right: 11%;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+   
+}
+.headLink {
+    /*color: #63241D;*/
+    color: #050325;
+}
+.navbarul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    align-items: center;
+}
+.navbarul li{
+    margin: 0 8px
+}
+.credits a {
+    color: #D9D9D9;
+}

@@ -1,0 +1,82 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage"%>
+
+<!DOCTYPE html>
+
+<html dir="ltr" lang="en">
+<head runat="server">
+    <link href="../styling_scripting/css/Master.css" rel="stylesheet" />
+    <link href="../styling_scripting/inriaSansFont/InriaSansFonts.css" rel="stylesheet" />
+    <script>
+        function HideLogInSignUp() {
+            if (window.getComputedStyle(document.getElementById("LogUp")).display == 'block') {
+                document.getElementById("LogUp").style.display = 'none';
+            }
+            else {
+                document.getElementById("LogUp").style.display = 'block';
+
+            }
+        }
+    </script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <header>
+        <div class="headercontainer">
+            <div class="homepageLink">
+                <a href="../aspx/homePage.aspx" class="headLink">HOME PAGE</a>
+            </div>
+            <div class="navbar">
+                <ul class="navbarul">
+                    <li>
+                        <div>
+                            <a href="../aspx/otherSongs.aspx" class="headLink">OTHER SONGS</a>
+                        </div>
+
+                    </li>
+                    <li>
+                        <div>
+                            <a href="../aspx/me.html" class="headLink">ME!(NOT YOU!)</a>
+                        </div>
+                    </li>
+                    <li style="display: flex; align-items: center;">
+                        <%=logup %>
+                        <img class="pfp-image" src="../images/pfps/<%=pfp %>" height="45" width="45" id="UserPfp" onclick="HideLogInSignUp()" />
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    <footer>
+        <div class="foot">
+            <div class="credits">
+
+                <a href="https://www.flaticon.com/free-icons/emoji" title="emoji icons">Emoji icons created by Freepik - Flaticon</a>
+
+            </div>
+            <div class="allrights">
+                <p>
+                    ©All rights reserved.<br />
+                    <i>to have it all, <br />is to have none of it
+                    </i>
+                </p>
+            </div>
+
+            <div class="links">
+                <ul class="navbarul">
+                    <li>
+                        <a href="homePage.aspx" class="footanchor">HOME PAGE</a>
+                    </li>
+                    <li>
+                       <a href="../aspx/me.html" class="footanchor">ME!(AGAIN!)</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

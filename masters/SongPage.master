@@ -1,0 +1,129 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/masters/MasterPage.master" AutoEventWireup="true" CodeFile="SongPage.master.cs" Inherits="masters_SongPage" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
+    <link href="../styling_scripting/css/comments.css" rel="stylesheet" />
+    <link href="../styling_scripting/css/homepage.css" rel="stylesheet" />
+    <script src="../styling_scripting/js/comments.js"></script>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
+    <div class="HomePageDiv">
+        <asp:ContentPlaceHolder ID="PossibleGreetingPlaceHolder" runat="server">
+        </asp:ContentPlaceHolder>
+        <div class="notGreeting">
+            <div class="songContent">
+                <h1 class="SongDate" id="SongDate"><%=string.Format("{0:D2}/{1:D2}/{2:D4}",Song.SongDate.Day,Song.SongDate.Month,Song.SongDate.Year)%></h1>
+                <div class="SongWhole">
+                    <ul style="list-style: none; padding: 0;">
+                        <li>
+                            <div class="Song">
+                                <iframe class="Embedding" style="border-radius: 12px; background-color: #0E6BA8" src="https://open.spotify.com/embed/track/<%=Song.SpotifyCode%>?utm_source=generator"
+                                    width="500" height="152" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture" loading="lazy"></iframe>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="reactions">
+                                <ul class="reactions-Ul">
+                                    <script>
+                                        add_styles(<%=Song.SongId %>);
+                                    </script>
+                                    <li onload="add_styles(<%=Song.SongId %>)">
+                                        <button class="reaction-button" id="button1" onclick="reaction(1,<%=Song.SongId %>)">
+                                            <img src="../images/reactions/poop.png" height="20" />
+                                            <div id="react1">
+                                                <%=reactions["poop"] %>
+                                            </div>
+                                        </button>
+
+                                    </li>
+                                    <li>
+                                        <button class="reaction-button" id="button2" onclick="reaction(2,<%=Song.SongId %>)">
+                                            <img src="../images/reactions/clown.png" height="20" />
+                                            <div id="react2">
+                                                <%=reactions["clown"] %>
+                                            </div>
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button class="reaction-button" id="button3" onclick="reaction(3,<%=Song.SongId %>)">
+                                            <img src="../images/reactions/heart.png" height="20" />
+                                            <div id="react3">
+                                                <%=reactions["heart"] %>
+                                            </div>
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button class="reaction-button" id="button4" onclick="reaction(4,<%=Song.SongId %>)">
+                                            <img src="../images/reactions/bomb.png" height="20" />
+                                            <div id="react4">
+                                                <%=reactions["bomb"] %>
+                                            </div>
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button class="reaction-button" id="button5" onclick="reaction(5,<%=Song.SongId %>)">
+                                            <img src="../images/reactions/fire.png" height="20" />
+                                            <div id="react5">
+                                                <%=reactions["fire"] %>
+                                            </div>
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button class="reaction-button" id="button6" onclick="reaction(6,<%=Song.SongId %>)">
+                                            <img src="../images/reactions/whale.png" height="20" />
+                                            <div id="react6">
+                                                <%=reactions["whale"]%>
+                                            </div>
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button class="reaction-button" id="button7" onclick="reaction(7,<%=Song.SongId %>)">
+                                            <img src="../images/reactions/skull.png" height="20" />
+                                            <div id="react7">
+                                                <%= reactions["skull"] %>
+                                            </div>
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="commentaryOuter">
+                <div class="commentaryBlock" id="commentaryBlock">
+                    <asp:Repeater runat="server" ID="CommentsRepeater">
+                        <ItemTemplate>
+                            <div class="comment" id="comment<%#Eval("Comment.Id") %>">
+                                <div class="commentUserData">
+                                    <img class="pfp-image" src="../images/pfps/<%#Eval("pfp")%>" height="22" width="22" title="<%#Eval("UserName")%>'s pfp" />
+                                    <a style="padding:inherit;" href="../aspx/Account.aspx?id=<%#Eval("userid")%>" ><b><%#Eval("UserName") %> </b></a>
+                                </div>
+                                <div class="textanddelte">
+                                    <div class="commentText" id="commenttext<%#Eval("Comment.Id") %>">
+                                        <%#Eval("Comment.Text") %>
+                                    </div>
+                                    <div class="delete">
+                                        <div runat="server" visible='<%#Eval("CorrectStyleDeletion") %>'>
+                                            <img src="../images/uiElements/bin.png" title="delete comment" onclick="deletecomment(<%#Eval("Comment.Id") %>)"height="24" />
+                                        </div>
+                                        <div runat="server" visible='<%#Eval("CorrectStyleEditing")%>'>
+                                            <img src="../images/uiElements/edit.png" title="edit comment" onclick="editcomment(<%#Eval("Comment.Id") %>)" height="24" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <i title="<%#Eval("Comment.CommentDate") %>"><%#Eval("FormatedDateTime") %></i>
+                            </div>
+                        </ItemTemplate>
+                    </asp:Repeater>
+                </div>
+                <div class="newComment" runat="server" visible="false" id="newCommentDiv">
+                    <textarea rows="5" cols="40" id="newComment" name="newComment" placeholder="Add a comment!" required="required" maxlength="250"></textarea>
+                    <input type="number" style="display: none" value="-1" name="commId" id="commId" required="required" />
+                    <input type="submit" value="Submit comment" onclick="addComment(<%=Song.SongId %>)" />
+                    <b style="padding-left: 15px; padding-right: 15px; padding-top: 2px;" id="errorMessage"></b>
+                </div>
+            </div>
+        </div>
+    </div>
+</asp:Content>
+

@@ -1,0 +1,71 @@
+﻿.settings {
+    margin-left: 11%;
+    margin-right: 11%;
+    margin-top: 5%;
+    width: 45%;
+    border-radius: 22px;
+    background-color: #A6E1FA;
+    border: 2px solid #0074B5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-bottom:10px;
+}
+.vertical{
+    width:100%;
+    height:0px;
+    border:solid;
+    border-width:1px;
+    margin-top:6px;
+    margin-bottom:6px;
+}
+.settings p {
+    font-size: 20px;
+    font-family: 'inria_sansbold';
+    
+}
+form {
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+ button,
+ input{
+    border-radius:2px;
+    font:inherit;
+    border-width:1px;
+}
+.settingsdivINSIDEFORM{
+    width:inherit;
+    display:flex;
+}
+ hr{
+    width:inherit;
+    color:#030525;
+    border:solid;
+    border-width:1px
+}
+ .outer{
+     width:inherit;
+     display:flex;
+     flex-direction:column;
+     align-items:center;
+ }
+.deletebutton{
+    margin-top:3%;
+    background-color:darkred;
+    border:solid;
+    border-radius:6px;
+    padding:2px;
+    flex-direction:column;
+    align-content:center;
+    align-items:center;
+}
+.deletebutton button{
+    background:none;
+    color:#d9d9d9;
+    border:none;
+}

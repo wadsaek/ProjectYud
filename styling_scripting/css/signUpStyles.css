@@ -1,0 +1,30 @@
+﻿#registrationForm,
+#SongInputForm,
+#logInDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.SignUpWindow {
+    display: flex;
+    margin-top:34px;
+    flex-direction: column;
+    align-items: center;
+    background-color: #A6E1FA;
+    border-radius: 5px;
+    padding:20px 40px 20px 40px
+    
+}
+.SignUpWindow ul{
+    list-style:none;
+    padding-left:0px;
+}
+.SignUpWindow li{
+    font-size:22px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+.SignUpWindow input{
+    font-size:inherit;
+}

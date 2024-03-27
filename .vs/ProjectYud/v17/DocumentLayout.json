@@ -1,0 +1,109 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Developing\\projectDemosAndAttempts\\ProjectYud\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3A63C0F3-247C-4197-81D2-C5C68CD39959}|D:\\Developing\\projectDemosAndAttempts\\ProjectYud|d:\\developing\\projectdemosandattempts\\projectyud\\styling_scripting\\js\\settings.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{3A63C0F3-247C-4197-81D2-C5C68CD39959}|D:\\Developing\\projectDemosAndAttempts\\ProjectYud|solutionrelative:styling_scripting\\js\\settings.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A63C0F3-247C-4197-81D2-C5C68CD39959}|D:\\Developing\\projectDemosAndAttempts\\ProjectYud|D:\\Developing\\projectDemosAndAttempts\\ProjectYud\\aspx\\settings.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A63C0F3-247C-4197-81D2-C5C68CD39959}|D:\\Developing\\projectDemosAndAttempts\\ProjectYud|solutionrelative:aspx\\settings.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A63C0F3-247C-4197-81D2-C5C68CD39959}|D:\\Developing\\projectDemosAndAttempts\\ProjectYud|d:\\developing\\projectdemosandattempts\\projectyud\\aspx\\settings.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{3A63C0F3-247C-4197-81D2-C5C68CD39959}|D:\\Developing\\projectDemosAndAttempts\\ProjectYud|solutionrelative:aspx\\settings.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A63C0F3-247C-4197-81D2-C5C68CD39959}|D:\\Developing\\projectDemosAndAttempts\\ProjectYud|D:\\Developing\\projectDemosAndAttempts\\ProjectYud\\styling_scripting\\css\\account.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{3A63C0F3-247C-4197-81D2-C5C68CD39959}|D:\\Developing\\projectDemosAndAttempts\\ProjectYud|solutionrelative:styling_scripting\\css\\account.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A63C0F3-247C-4197-81D2-C5C68CD39959}|D:\\Developing\\projectDemosAndAttempts\\ProjectYud|d:\\developing\\projectdemosandattempts\\projectyud\\styling_scripting\\js\\makeadmin.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{3A63C0F3-247C-4197-81D2-C5C68CD39959}|D:\\Developing\\projectDemosAndAttempts\\ProjectYud|solutionrelative:styling_scripting\\js\\makeadmin.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "settings.js",
+              "DocumentMoniker": "D:\\Developing\\projectDemosAndAttempts\\ProjectYud\\styling_scripting\\js\\settings.js",
+              "RelativeDocumentMoniker": "styling_scripting\\js\\settings.js",
+              "ToolTip": "D:\\Developing\\projectDemosAndAttempts\\ProjectYud\\styling_scripting\\js\\settings.js",
+              "RelativeToolTip": "styling_scripting\\js\\settings.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-03-24T13:30:28.516Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "settings.aspx",
+              "DocumentMoniker": "D:\\Developing\\projectDemosAndAttempts\\ProjectYud\\aspx\\settings.aspx",
+              "RelativeDocumentMoniker": "aspx\\settings.aspx",
+              "ToolTip": "D:\\Developing\\projectDemosAndAttempts\\ProjectYud\\aspx\\settings.aspx",
+              "RelativeToolTip": "aspx\\settings.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-03-24T13:28:57.958Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "account.css",
+              "DocumentMoniker": "D:\\Developing\\projectDemosAndAttempts\\ProjectYud\\styling_scripting\\css\\account.css",
+              "RelativeDocumentMoniker": "styling_scripting\\css\\account.css",
+              "ToolTip": "D:\\Developing\\projectDemosAndAttempts\\ProjectYud\\styling_scripting\\css\\account.css",
+              "RelativeToolTip": "styling_scripting\\css\\account.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-03-23T10:44:15.434Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "settings.aspx.cs",
+              "DocumentMoniker": "D:\\Developing\\projectDemosAndAttempts\\ProjectYud\\aspx\\settings.aspx.cs",
+              "RelativeDocumentMoniker": "aspx\\settings.aspx.cs",
+              "ToolTip": "D:\\Developing\\projectDemosAndAttempts\\ProjectYud\\aspx\\settings.aspx.cs",
+              "RelativeToolTip": "aspx\\settings.aspx.cs",
+              "ViewState": "AQIAACIAAAAAAAAAAAAQwCkAAABPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-23T10:15:34.312Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "makeAdmin.js",
+              "DocumentMoniker": "D:\\Developing\\projectDemosAndAttempts\\ProjectYud\\styling_scripting\\js\\makeAdmin.js",
+              "RelativeDocumentMoniker": "styling_scripting\\js\\makeAdmin.js",
+              "ToolTip": "D:\\Developing\\projectDemosAndAttempts\\ProjectYud\\styling_scripting\\js\\makeAdmin.js",
+              "RelativeToolTip": "styling_scripting\\js\\makeAdmin.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-03-24T13:28:07.586Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

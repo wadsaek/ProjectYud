@@ -1,0 +1,30 @@
+﻿#accountdiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center;
+    padding-left: 11%;
+    padding-right: 11%;
+    padding-top:2%
+}
+
+.name-buttondiv {
+    margin-right: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.theprettyblue {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#050325;
+    font-size: xx-large;
+    font-family: 'inria_sansbold';
+    height: 60px;
+    background-color: #A6E1FA;
+    border-radius: 8px;
+    padding-bottom:5px;
+    width:100%
+}
